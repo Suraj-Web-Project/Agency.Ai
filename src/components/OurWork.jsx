@@ -37,7 +37,12 @@ const OurWork = () => {
           <div
             key={index}
             className="hover:scale-102 duration-500 transition-all cursor-pointer"
-          ></div>
+          >
+            <img src={work.image} className="w-full rounded-xl" alt="" />
+            <h3 className="mt-3 mb-2 text-lg font-semibold">{work.title}</h3>
+            <p className="text-sm opacity-60 w-5/6">{work.description}</p>
+          </div>
+
         ))}
       </div>
     </div>
