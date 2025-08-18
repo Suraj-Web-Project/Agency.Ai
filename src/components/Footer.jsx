@@ -1,9 +1,12 @@
 import React from "react";
 import assets from "../assets/assets";
+import { motion } from "motion/react";
 
 const Footer = ({ theme }) => {
   return (
-    <div className="bg-slate-50 dark:bg-gray-900 pt-10 sm:pt-10 mt-20 px-4 sm:px-10 lg:px-24 xl:px-40">
+    <motion.div
+    
+     className="bg-slate-50 dark:bg-gray-900 pt-10 sm:pt-10 mt-20 px-4 sm:px-10 lg:px-24 xl:px-40">
       {/* footer top */}
       <div className="flex justify-between lg:items-center max-lg:flex-col gap-10">
         {/* Logo + Links */}
@@ -78,7 +81,7 @@ const Footer = ({ theme }) => {
           <img src={assets.linkedin_icon} alt="LinkedIn" className="w-5 h-5" />
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
